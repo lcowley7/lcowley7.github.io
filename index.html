@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lachlan Cowley</title>
+<meta name="description" content="Lachlan Cowley studies how large language models represent what they know.">
+
+
+<style>
+  /* Will probably change this later*/
+  :root {
+    --page: #ffffff;
+    --ink: #14213d;
+    --quiet: #4a5568;
+    --link: #1f4e9c;
+    --visited: #5b3a8c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page: #0f1626;
+      --ink: #e8e6df;
+      --quiet: #a9b1c2;
+      --link: #9dbcff;
+      --visited: #c3a8f0;
+    }
+  }
+
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 5rem;
+  }
+
+  /* Header: the name, then one line with the scholarship,
+     then a rule. */
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .under-name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.25rem 1.5rem;
+    margin: 0.6rem 0 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--ink);
+  }
+  .under-name strong { font-weight: 700; }
+
+  /* Section headings: bold with a thin rule. */
+  h2 {
+    margin: 2.75rem 0 0.9rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid var(--ink);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  p { margin: 1.1rem 0 0; }
+
+  a { color: var(--link); text-underline-offset: 0.15em; }
+  a:visited { color: var(--visited); }
+  a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; border-radius: 2px; }
+  .under-name a { color: inherit; }
+
+  /* Papers: one per entry with a hanging indent. */
+  .papers { list-style: none; margin: 0; padding: 0; }
+  .papers li {
+    margin: 0 0 0.9rem;
+    padding-left: 1.4em;
+    text-indent: -1.4em;
+  }
+  .papers cite { font-style: italic; }
+  .papers .where { color: var(--quiet); }
+
+  footer {
+    margin-top: 3.5rem;
+    color: var(--quiet);
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 30rem) {
+    h1 { font-size: 2rem; }
+    main { padding-top: 2.5rem; }
+  }
+</style>
+</head>
+
+<body>
+<main>
+
+  <header>
+    <h1>Lachlan Cowley</h1>
+    <p class="under-name">
+      <strong><a href="https://www.johnmonash.com/scholar/lachlan-cowley/">John Monash Scholar (2027)</a></strong>
+    </p>
+  </header>
+
+  <p>
+    I am an Honours student in computer science at Monash University, where I work on
+    mechanistic interpretability with Eduard Hovy and Jey Han Lau. I study how large
+    language models represent what they know: why information is encoded where it is,
+    and how the relationships between concepts shape the layout of a model's
+    representations.
+  </p>
+
+  <p>
+    Before this I worked on software verification for Artemis&nbsp;II at NASA, 
+    quantum error mitigation at the University of Melbourne,
+    and the SpIRIT nanosatellite. 
+  </p>
+
+  
+  <p>
+    My papers are on
+    <a href="https://scholar.google.com/citations?user=bJTgBFQAAAAJ">Google Scholar</a>.
+  </p>
+  
+
+  <h2>Papers</h2>
+
+  <ul class="papers">
+
+    <!-- Still need to add arxiv
+         <cite><a href="https://arxiv.org/abs/XXXX.XXXXX">How Relations Impose Embedding-Space Structure</a></cite>. -->
+    <li>
+      <cite>How Relations Impose Embedding-Space Structure</cite>.
+      <strong>Lachlan Cowley</strong>, Jey Han Lau, Yulia Otmakhova, Eduard Hovy.
+      <span class="where">Under review, ACL Rolling Review, 2026.</span>
+    </li>
+
+    <!-- Still need to add arxiv
+         <cite><a href="https://arxiv.org/abs/XXXX.XXXXX">Seeing the Qualities of the World as a Language Model Does</a></cite>.
+         and change "In preparation" to the right status. -->
+    <li>
+      <cite>Seeing the Qualities of the World as a Language Model Does</cite>.
+      <strong>Lachlan Cowley</strong>, Jey Han Lau, Yulia Otmakhova, Eduard Hovy.
+      <span class="where">In preparation, 2026.</span>
+    </li>
+
+    <li>
+      <cite><a href="https://aclanthology.org/2026.findings-emnlp.2202/">AutoLexSteer: Automatic Contrast Construction for Lexical Activation Steering</a></cite>.
+      Shuhe Wang, <strong>Lachlan Cowley</strong>, Eduard Hovy, Jey Han Lau.
+      <span class="where">Findings of EMNLP 2026.</span>
+      Also on <a href="https://arxiv.org/abs/2609.06879">arXiv</a>.
+    </li>
+
+
+    <li>
+      <cite><a href="https://openaccess.thecvf.com/content/CVPR2026W/AI4Space/html/Joukhadar_Flight_Demonstration_of_On-Orbit_Model_Adaptation_on_the_SpIRIT__CVPRW_2026_paper.html">Flight Demonstration of On-Orbit Model Adaptation on the SpIRIT Nanosatellite</a></cite>.
+      Z. Joukhadar, M. Ortiz del Castillo, J. Morgan, <strong>L. Cowley</strong>, R. Mearns,
+      S. Barraclough, K. A. Ehinger, B. I. P. Rubinstein, R. Sinnott, M. Trenti, J. Bailey.
+      <span class="where">CVPR 2026, AI4Space Workshop (Spotlight).</span>
+    </li>
+
+    <li>
+      <cite><a href="https://doi.org/10.1016/j.xcrm.2025.101936">The Metabolic and Cardiovascular Effects of Amphetamine Are Partially Mediated by the Central Melanocortin System</a></cite>.
+      S. E. Simonds, J. T. Pryor, B. Y. H. Lam, G. K. Dowsett, T. Mustafa, A. Munder, K. Elysee,
+      E. Balland, <strong>L. O. Cowley</strong>, G. S. H. Yeo, A. Lawrence, D. C. Spanswick, M. A. Cowley.
+      <span class="where">Cell Reports Medicine, 2025.</span>
+    </li>
+
+    <li>
+      <cite><a href="https://doi.org/10.3389/fpubh.2022.882569">The Physiological Effects of Air Pollution: Particulate Matter, Physiology and Disease</a></cite>.
+      J. T. Pryor, <strong>L. O. Cowley</strong>, S. E. Simonds.
+      <span class="where">Frontiers in Public Health, 2022.</span>
+    </li>
+
+  </ul>
+
+  <!-- Where I'll add blogs later
+  <h2>Writing</h2>
+  <ul class="papers">
+    <li><a href="guttman-effect.html">The Guttman effect</a> <span class="where">Month 2027</span></li>
+  </ul>
+  -->
+
+  <footer>
+    Last updated November 2026.
+  </footer>
+
+</main>
+</body>
+</html>
